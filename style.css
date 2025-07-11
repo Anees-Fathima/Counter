@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+    height: 100vh;
+}
+.counter{
+    padding:90px;
+    width:400px;
+    height:300px;
+    background-color: #ccccff;
+    border-radius:50px;
+    box-shadow: 4px 4px 6px 0 rgba(0,0,0,0.2);
+    transition: all 0.3s ease-in-out;
+}
+.counter:hover{
+    box-shadow: 4px 4px 7px 0 rgba(0,0,0,0.4);
+}
+h2{
+    font-size:60px;
+    margin-bottom:90px;
+    color:maroon
+}
+p{
+    font-size:300%;
+}
+.options{
+    margin-top:5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:8px;
+}
+.b1>button{
+    width:60px;
+    height:40px;
+    font-size:30px;
+    font-weight:100;
+    background-color: red;
+    border:none
+}
+.b1>button:hover{
+    cursor:pointer;
+    box-shadow: 2px 3px 3.5px 0 rgba(0,0,0,0.2);
+}
+.b2>button{
+    width:100px;
+    height:40px;
+    font-size: 20px;
+    font-weight:lighter;
+    background-color: orange;
+    border: none;
+}
+.b2>button:hover{
+    cursor: pointer;
+    background-color: gold;
+    box-shadow: 2px 3px 3.5px 0 rgba(0,0,0,0.2);
+}
+.b3>button{
+    width:60px;
+    height:40px;
+    font-size:25px;
+    font-weight:100;
+    background-color: #00cc44;
+    border:none;
+}
+.b3>button:hover{
+    cursor:pointer;
+    box-shadow: 2px 3px 3.5px 0 rgba(0,0,0,0.2);
+}
+@media screen and (max-width:767px){
+    body{display:flex;flex-direction: column;justify-content: center;align-items: center; }
+    .counter{margin-top:10%;margin-bottom:10%;margin-left:10%;margin-right:10%;width:70%;padding: 30px;height: auto}
+}

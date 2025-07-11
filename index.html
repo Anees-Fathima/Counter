@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Counter</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="counter">
+      <h2>Counter</h2>
+      <p id="count">0</p>
+      <div class="options">
+        <div class="b1">
+          <button onclick="decrease()">-</button>
+        </div>
+        <div class="b2">
+          <button onclick="reset()">Reset</button>
+        </div>
+        <div class="b3">
+          <button onclick="increase()">+</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      let i = 0;
+      function increase() {
+        i = i + 1;
+        document.getElementById("count").innerHTML = i;
+        if (i < 0) {
+          document.getElementById("count").style.color = "red";
+        } else if (i > 0) {
+          document.getElementById("count").style.color = "green";
+        } else {
+          document.getElementById("count").style.color = "black";
+        }
+      }
+      function decrease() {
+        i = i - 1;
+        document.getElementById("count").innerHTML = i;
+        if (i < 0) {
+          document.getElementById("count").style.color = "red";
+        } else if (i > 0) {
+          document.getElementById("count").style.color = "green";
+        } else {
+          document.getElementById("count").style.color = "black";
+        }
+      }
+      function reset() {
+        i = 0;
+        document.getElementById("count").innerHTML = i;
+        document.getElementById("count").style.color = "black";
+      }
+    </script>
+  </body>
+</html>
